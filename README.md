@@ -1,0 +1,2 @@
+# PSNPrank
+PSNPrank API
