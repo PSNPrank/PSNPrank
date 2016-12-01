@@ -8,7 +8,7 @@
    Find update's in your API panel.
                                         */
 
-class PSNBomb {
+class PSNPrank {
     private $oauth;
 
     private $bomb_error;
@@ -34,7 +34,7 @@ class PSNBomb {
     public function auth() {
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://api.psnbomb.org/API_FILES/V1/auth.php');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.psnprank.org/API_FILES/V1/auth.php');
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -62,7 +62,7 @@ class PSNBomb {
     
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, 'https://api.psnbomb.org/API_FILES/V1/bomb.php');
+        curl_setopt($ch, CURLOPT_URL, 'https://api.psnprank.org/API_FILES/V1/bomb.php');
 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
